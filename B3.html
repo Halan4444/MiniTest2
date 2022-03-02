@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    function doichu () {
+        let string = prompt("Nhập vào chuỗi tùy ý")
+        let arr    = string.split('');
+        for (i=0; i<string.length;i++) {
+            if (arr[i] == arr[i].toUpperCase()) {
+                arr[i]= arr[i].toLowerCase();
+            } else {
+                arr[i] = arr[i].toUpperCase()
+            }
+        } alert (arr.join(''));
+    }
+    doichu();
+</script>
+
+</body>
+</html>

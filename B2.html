@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let value = prompt("Nhập vào 6 số")
+    let string = value;
+    let arr    = string.split('');
+    let result = [];
+    arr.forEach(function(str, index){
+        if((string[index-1]%2 === 0)&&(string[index]%2 === 0)){
+            result.push('-', str);
+        }else{
+            result.push(str);
+        }
+    });
+    document.write(result.join(''));
+</script>
+
+</body>
+</html>
